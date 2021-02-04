@@ -45,8 +45,8 @@ jobs:
 
     - name: Build
       run: |
-       dotnet restore DotNet.Core.Console.EmplManageASPtesting/DotNet.Core.Console.EmplManageASPtesting.csproj
-        msbuild /t:Pack /p:Configuration=Debug DotNet.Core.Console.EmplManageASPtesting/DotNet.Core.Console.EmplManageASPtesting.csproj
+       dotnet restore EmplManageASPtesting/EmplManageASPtesting.csproj
+        msbuild /t:Pack /p:Configuration=Debug EmplManageASPtesting/EmplManageASPtesting.csproj
     
     - name: Copy
       run: copy EmplManageASPtesting/EmplManageASPtesting/bin/Debug/*.nupkg .
